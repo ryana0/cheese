@@ -5,19 +5,54 @@
 
 html, body {
     width: 100vw;
-    height: 500vh;
+    height: 200vh;
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #181C25; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #777; 
+    border-radius: 40px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #777; 
+    border-radius: 40px;
+  }
+
 #main {
     width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
+    height: 200vh;
+    overflow: hidden;
 }
 
-#svg {
-    width: 100vw;
-    height: 100vh;
+#cheeseLineContain {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+}
+
+#blob1 {
+   grid-row: 1;
+}
+
+#blob2 {
+    grid-row: 2;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+#cheese {
+    position: absolute;
+    margin: 25px;
 }
