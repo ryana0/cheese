@@ -15,8 +15,7 @@ window.addEventListener('scroll', () => {
     var drawLength = pathLength * scrollPercentage
     path.style.strokeDashoffset = pathLength - drawLength
 
-    if(window.scrollY >= '3100') {
-        console.log('wheee aa aeoinasd yes i am yes')
+    if(scrollPercentage >= '0.8') {
         types.classList.add('drawIn')
     }
 })
