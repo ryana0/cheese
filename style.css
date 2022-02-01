@@ -64,13 +64,11 @@ html, body {
 }
 
 .drawIn {
-    animation: drawIn 20s linear;
+    animation: drawIn 10s linear;
     animation-fill-mode: forwards;
 }
 
 #types {
-    animation: drawIn 20s linear;
-    animation-fill-mode: forwards;
     stroke-dasharray: 2500px;
     stroke-dashoffset: 2500px;
     width: 100%;
