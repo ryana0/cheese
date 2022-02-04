@@ -1,16 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
+
+:root {
+    --bodyHeight: 700vh
+}
+
 * {
     padding: 0;
     margin: 0;
+    user-select: none;
 }
 
 html, body {
     width: 100vw;
-    height: 500vh;
+    height: var(--bodyHeight);
     overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 12px;
   }
 
   ::-webkit-scrollbar-track {
@@ -29,21 +36,21 @@ html, body {
 
 #main {
     width: 100%;
-    height: 500vh;
+    height: var(--bodyHeight);
     overflow: hidden;
 }
 
 #cheeseLineContain {
     width: 100%;
-    height: 415vh;
+    height: 425vh;
 }
 
 #cheese {
     margin-top: 3vw;
     margin-left: -5vw;
     width: 100vw;
-    transform: translateX(-10vw);
-    height: 335vh;
+    transform: translateX(-5vw);
+    height: 345vh;
     stroke-width: 7;
     z-index: 2;
 }
@@ -64,7 +71,7 @@ html, body {
 }
 
 .drawIn {
-    animation: drawIn 10s linear;
+    animation: drawIn 15s linear;
     animation-fill-mode: forwards;
 }
 
@@ -72,4 +79,83 @@ html, body {
     stroke-dasharray: 2500px;
     stroke-dashoffset: 2500px;
     width: 100%;
+}
+
+#cheeseSection {
+    transform: translateY(5vw);
+    width: 100%;
+    height: calc(var(--bodyHeight) - calc(415vh + 196px) - 15vw);
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    row-gap: 3vh;
+}
+
+@keyframes slideIn {
+
+    100% {
+        transform: translateX(75%);
+    }
+}
+
+.slideIn {
+    justify-self: center;
+    align-self: center;
+    animation: slideIn 500ms ease-in-out;
+    animation-fill-mode: forwards;
+    grid-column: 2 !important;
+    z-index: 3;
+}
+
+.cardL {
+    height: 100%;
+    width:  100%;
+    grid-column: 1;
+    border-radius: 50px;
+    box-shadow: 4px 4px 4px gray;
+    background-color: #fafafa;
+    color: #fbae3c;
+    font-family: League Script;
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 600;
+    transform: translateX(-6vw);
+    display: table;
+    transition: transform 100ms ease-in-out;
+    cursor: pointer;
+}
+
+.cardL:hover {
+    transform: translateX(0);
+}
+
+.cardL h1 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cardR {
+    height: 100%;
+    width:  100%;
+    grid-column: 3;
+    border-radius: 50px;
+    box-shadow: -4px 4px 4px gray;
+    color: #fbae3c;
+    background-color: #fafafa;
+    font-family: League Script;
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 600;
+    transform: translateX(6vw);
+    display: table;
+    transition: transform 100ms ease-in-out;
+    cursor: pointer;
+}
+
+.cardR h1 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cardR:hover {
+    transform: translateX(0);
 }

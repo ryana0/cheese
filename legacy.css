@@ -1,0 +1,88 @@
+.cardL {
+    height: 100%;
+    width:  100%;
+    grid-column: 2;
+    background-color: #002;
+    border-radius: 50px;
+    color: #fbae3c;
+    font-family: League Script;
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-size: cover;
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 600;
+}
+
+.cardR {
+    font-weight: 600;
+    font-family: League Script;
+    font-size: 2vw;
+    text-align: center;
+    color: #fbae3c;
+    height: 100%;
+    width: 100%;
+    grid-column: 4;
+    background-color: #002;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+h1 {
+    padding-top: 5%;
+}
+
+#cheese1 {
+    background-image: url("https://cdn.discordapp.com/attachments/926567728846864427/938242397727518740/layered-peaks-haikei_11.png");
+}
+
+#cheese2 {
+    background-image: url("https://cdn.discordapp.com/attachments/926567728846864427/938246876208177192/layered-steps-haikei.png");
+}
+
+#cheese3 {
+    background-image: url("https://cdn.discordapp.com/attachments/926567728846864427/938242015496396860/layered-peaks-haikei_7.png");
+}
+
+#cheese4 {
+    background-image: url("https://cdn.discordapp.com/attachments/926567728846864427/938247570889789440/layered-waves-haikei_3.png");
+}
+
+#cheese5 {
+    background-image: url("https://cdn.discordapp.com/attachments/926567728846864427/938242527235035136/layered-peaks-haikei_13.png");
+}
+
+#cheese6 {
+    background-image: url("https://cdn.discordapp.com/attachments/926567728846864427/938242369537572985/layered-peaks-haikei_10.png");
+}
+
+#cheese7 {
+    background-image: url("https://cdn.discordapp.com/attachments/926567728846864427/938246906411364453/layered-steps-haikei_1.png");
+}
+
+#cheese8 {
+    background-image: url("https://cdn.discordapp.com/attachments/926567728846864427/938247597133537310/layered-waves-haikei_4.png");
+}
+
+#cheese9 {
+    background-image: url("https://cdn.discordapp.com/attachments/926567728846864427/938241863876485200/layered-peaks-haikei_4.png");
+}
+
+#cheese10 {
+    background-image: url("https://cdn.discordapp.com/attachments/926567728846864427/938241746905755648/layered-peaks-haikei_2.png");
+}
+
+#cheese11 {
+    background-image: url("https://cdn.discordapp.com/attachments/926567728846864427/938246944080408597/layered-steps-haikei_2.png");
+}
+
+#cheese12 {
+    background-image: url("https://cdn.discordapp.com/attachments/926567728846864427/938241946835632218/layered-peaks-haikei_6.png");
+}
+
+#cheese13 {
+    background-image: url("https://cdn.discordapp.com/attachments/926567728846864427/938242553319399475/layered-peaks-haikei_14.png");
+    transform: translateX(75%);
+}
