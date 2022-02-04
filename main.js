@@ -25,5 +25,9 @@ window.addEventListener('scroll', () => {
 document.querySelectorAll('.cardL').forEach(element => {
     element.addEventListener('click', () => {
         element.classList.add('slideIn')
+        setTimeout(() => {
+            element.style.gridColumn = 'grid-column: 2 !important;'
+            element.style.transform = 'translateX(0)'
+        }, 500);
     })
 })
