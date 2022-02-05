@@ -42,17 +42,19 @@ html, body {
 
 #cheeseLineContain {
     width: 100%;
-    height: 500vh;
+    height: 415vh;
 }
 
 #cheese {
     margin-top: 3vw;
-    margin-left: -5vw;
+    transform: translate(-15vw);
     width: 100vw;
-
-    height: 345vh;
-    stroke-width: 7;
+    height: 340vh;
     z-index: 2;
+}
+
+#cheese path {
+    stroke-width: 5;
 }
 
 #bg {
@@ -71,7 +73,7 @@ html, body {
 }
 
 .drawIn {
-    animation: drawIn 15s linear;
+    animation: drawIn 25s linear;
     animation-fill-mode: forwards;
 }
 
@@ -93,17 +95,15 @@ html, body {
 
 @keyframes slideIn {
     100% {
-        transform: translateX(33vw);
+        transform: translate(10vw, 4vh);
+        width: 80vw;
+        height: 80vh;
     }
 }
 
 .slideIn {
-    justify-self: center;
-    align-self: center;
-    animation: slideIn 500ms ease-in-out;
+    animation: slideIn 500ms linear;
     animation-fill-mode: forwards;
-
-    z-index: 3;
 }
 
 .cardL {
@@ -118,7 +118,7 @@ html, body {
     font-size: 2vw;
     text-align: center;
     font-weight: 600;
-    transform: translateX(-6vw);
+    margin-left: -6vw;
     display: table;
     transition: transform 100ms ease-in-out;
     cursor: pointer;
@@ -133,19 +133,32 @@ html, body {
     vertical-align: middle;
 }
 
+@keyframes slideIn2 {
+    100% {
+        transform: translate(-10vw, 4vh);
+        width: 80vw;
+        height: 80vh;
+    }
+}
+
+.slideIn2 {
+    animation: slideIn2 500ms linear;
+    animation-fill-mode: forwards;
+}
+
 .cardR {
     height: 100%;
     width:  100%;
     grid-column: 3;
     border-radius: 50px;
-    box-shadow: -4px 4px 4px gray;
+    box-shadow: 4px 4px 4px gray;
     color: #fbae3c;
     background-color: #fafafa;
     font-family: League Script;
     font-size: 2vw;
     text-align: center;
     font-weight: 600;
-    transform: translateX(6vw);
+    margin-left: 6vw;
     display: table;
     transition: transform 100ms ease-in-out;
     cursor: pointer;
